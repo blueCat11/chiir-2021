@@ -1,0 +1,146 @@
+ /* The Modal (background) */
+ .modal-cpp {
+   display: none;
+   /* Hidden by default */
+   position: fixed !important;
+   /* Stay in place */
+   z-index: 10000 !important;
+   /* Sit on top */
+   left: 0;
+   top: 0 !important;
+   width: 100% !important;
+   /* Full width */
+   height: 100% !important;
+   /* Full height */
+   overflow: auto;
+   /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0);
+   /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4);
+   /* Black w/ opacity */
+ }
+
+.modal-cpp li{
+  font-size: 13px !important;
+}
+ .modal-cpp p {
+   /* color: #666666 !important; */
+   font-family: arial,sans-serif;
+ }
+
+ .uk-grid-small {
+   margin-bottom: -2em !important;
+ }
+
+ .modal-cpp hr {
+   max-width: 100% !important;
+ }
+
+ .modal-header-cpp h3 {
+   color: black !important;
+   margin-top: 1em;
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 1.255;
+ }
+
+ /* Modal Content/Box */
+ .modal-content-cpp {
+   background-color: #fefefe;
+   margin: 15% auto;
+   /* 15% from the top and centered */
+   border: 1px solid #888;
+   width: 60%;
+   /* Could be more or less, depending on screen size */
+ }
+
+ .modal-body-cpp {
+   margin-left: 3em;
+   margin-right: 3em;
+ }
+
+ .modal-content-cpp p {
+   margin-block-start: 0.5em;
+   margin-block-end: 0.5em;
+ }
+
+ /* The Close Button */
+ #closeModal {
+   margin-left: auto;
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+
+ #closeModal:hover,
+ #closeModal:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ .uk-button-default:focus, .uk-button-default:hover {
+   background-color: #ffdfb3 !important;
+   color: #F18C00 !important;
+   border-color: #F18C00 !important;
+ }
+
+ .uk-button-default {
+   background-color: transparent !important;
+   color: #F18C00 !important;
+   font-weight: 600;
+   border: 2px solid #F18C00 !important;
+   margin-bottom: 2em;
+   box-shadow: inset 0px 0px 0px 0px #FFFFFF;
+ }
+
+ .uk-text-bold {
+   color: black !important;
+ }
+
+ .modal-header-cpp {
+   margin-left: 3em;
+   margin-right: 3em;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   display: flex;
+   align-items: center;
+ }
+
+ .modal-header-cpp img {
+   margin-top: 2em;
+   margin-right: 1em;
+   margin-left: 1em;
+   width: 60px !important;
+   height: 60px !important;
+   margin-bottom: 1.5em;
+ }
+
+ #measurementDescription {
+   padding-left: 30px;
+   font-size: 2em !important;
+   color: #666666 !important;
+ }
+
+ .timeDescription {
+   font-size: 1.2em !important;
+   color: #666666 !important;
+ }
+
+ .betterThanText {
+   font-size: 1em !important;
+   color: #666666 !important;
+ }
+
+ #displayBoostText{
+   padding-bottom: 50px;
+   padding-top: 50px;
+   font-size: 1.5em !important;
+   color: black !important;
+}
+
+ #introduction {
+   margin-top: 1em;
+   color: black;
+ }

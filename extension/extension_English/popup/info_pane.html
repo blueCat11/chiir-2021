@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="info_pane.css" />
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="../libraries/uikit.min.css"/>
+  </head>
+
+<body>
+  <div id="popup-content">
+    <div class="heading">
+      <img src="../icons/symbol_128.png"></img>
+      <h3>Browsing behavior and privacy</h3>
+    </div>
+    <diV class="info_content">
+      <h5>Study from 25.05.2020 to 15.06.2020</h4> <!-- change with own data -->
+        <p>Please contact me with any questions at <a href="mailto:email">email</a></p> <!-- change with own data-->
+    </div>
+    <hr>
+
+    <div>
+      <div class="subheading">
+        <h6>Your participant id</h6>
+      </div>
+      <p id="participant_label"></p>
+      <div id="endOfStudy" class="hidden">
+        <div class="subheading">
+          <h6>Finalizing participation</h6>
+        </div>
+        <div id="finalize_participation">
+          <form class="uk-form-stacked">
+
+            <div class="uk-margin">
+                <label class="uk-form-label" for="last_survey_code">Please enter the 10 character code here, which you received in the last questionnaire in order to receive your code for the voucher raffle and course credit compensation. Through this code you can also gain access to more information about your browsing behavior, or about privacy.</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="last_survey_code" type="text" placeholder="Beginnt mit G">
+                </div>
+            </div>
+
+          </form>
+        <button id="code_send_button" class="uk-button uk-button-default">Send Code</button>
+        <div id="errorMessage"></div>
+      </div>
+      <div id="participation_code_area" class="info_content hidden">
+
+        <h6>Your participation code</h6>
+        <p id="participation_code"></p>
+        <a href="https://forms.gle/4ZWBdSicAWZECCHa9" target="_blank">Click on the link to enter your participation code in a final questionnaire.</a>
+
+      </div>
+    </div>
+      <div class="subheading">
+        <h6>General information</h4>
+      </div>
+      <div id="placeholder_while_no_data">
+        <p>Later, you will see more information on privacy and your browsing behavior here. </p>
+      </div>
+      <div id="hide_while_no_data" class="hidden">
+        <ul uk-accordion>
+          <li id="cookies_explanation" class="hidden">
+              <a class="uk-accordion-title" href="#">What are cookies?</a>
+              <div class="uk-accordion-content">
+                  <p>A cookie is textual information, which can be saved on a user's computer for a visited website.
+                    The web server can directly read this cookie information when the user later visits the site again.
+                    Purposes of these cookies can be e.g. the identification of the users (i.e. through a session id), saving a login, for example for an online service like Wikipedia, Facebook etc., or saving the contents of a shopping cart with an online vendor.
+                  </p>
+              </div>
+          </li>
+          <li id="third_party_request_explanation" class="hidden">
+              <a class="uk-accordion-title" href="#">What are third party requests?</a>
+              <div class="uk-accordion-content">
+                  <p>Communication in the internet between a user's computer, and a server works through requests and responses.
+                    A third party request is when during the loading of a website, there are not only requests to the server that this website is published on, but also requests to third parties (these are then the third party requests).
+                    These third parties can then also receive the information that the current user is visiting this website.
+                  </p>
+              </div>
+          </li>
+          <li id="privacy_points_explanation" class="hidden">
+              <a class="uk-accordion-title" href="#">What are privacy points?</a>
+              <div class="uk-accordion-content">
+                  <p>This extension awards privacy points for online behavior beneficial to privacy. That may be having a certain browser setting.
+                    Privacy points are deducted for online behavior detrimental to privacy, e.g. visiting websites with many cookies and third party requests.
+                  </p>
+              </div>
+          </li>
+        </ul>
+      </div>
+      <div id="end_of_study_info" class="hidden">
+        <p>There is now additional information on privacy and your browsing behavior available below.
+          Maybe you are already familiar with some of this information.
+          Please scroll all the way down to encounter additional new information.</p>
+      </div>
+        <div id="shown_with_updates" class="subheading hidden">
+          <h6>Privacy Update</h6>
+        </div>
+        <div id="updates_go_here">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div>
+  <script src="info_pane.js"></script>
+  <script src="../libraries/uikit.min.js"></script>
+</body>
+
+</html>

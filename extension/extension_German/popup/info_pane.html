@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="info_pane.css" />
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="../libraries/uikit.min.css"/>
+  </head>
+
+<body>
+  <div id="popup-content">
+    <div class="heading">
+      <img src="../icons/symbol_128.png"></img>
+      <h3>Browsing Verhalten und Privatsphäre</h3>
+    </div>
+    <diV class="info_content">
+      <h5>Studie vom 25.05.2020 bis 15.06.2020</h4>
+        <p>Bei Fragen kontaktieren Sie mich gerne unter <a href="mailto:Anna-Marie.Ortloff@student.ur.de">Anna-Marie.Ortloff@student.ur.de</a></p>
+    </div>
+    <hr>
+
+    <div>
+      <div class="subheading">
+        <h6>Ihre Teilnehmer-Id</h6>
+      </div>
+      <p id="participant_label"></p>
+      <div id="endOfStudy" class="hidden">
+        <div class="subheading">
+          <h6>Abschluss der Teilnahme</h6>
+        </div>
+        <div id="finalize_participation">
+          <form class="uk-form-stacked">
+
+            <div class="uk-margin">
+                <label class="uk-form-label" for="last_survey_code">Bitte geben Sie hier den 10-stelligen Code aus der letzten Umfrage ein, um Ihren Code für die Gutscheinverlosung und die VP-Stunden zu erhalten oder um Zugriff auf mehr Informationen über Ihr Browsingverhalten oder Privatsphäre zu erhalten.</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="last_survey_code" type="text" placeholder="Beginnt mit G">
+                </div>
+            </div>
+
+          </form>
+        <button id="code_send_button" class="uk-button uk-button-default">Code abschicken</button>
+        <div id="errorMessage"></div>
+      </div>
+      <div id="participation_code_area" class="info_content hidden">
+
+        <h6>Ihr Teilnahme-Code</h6>
+        <p id="participation_code"></p>
+        <a href="https://forms.gle/4ZWBdSicAWZECCHa9" target="_blank">Klicken Sie auf den Link um in der Umfrage Ihren Teilnahme-Code anzugeben</a>
+
+      </div>
+    </div>
+      <div class="subheading">
+        <h6>Allgemeine Informationen</h4>
+      </div>
+      <div id="placeholder_while_no_data">
+        <p>Hier bekommen Sie später Informationen zu Ihrem Browsingverhalten und Privatsphäre.</p>
+      </div>
+      <div id="hide_while_no_data" class="hidden">
+        <ul uk-accordion>
+          <li id="cookies_explanation" class="hidden">
+              <a class="uk-accordion-title" href="#">Was sind Cookies?</a>
+              <div class="uk-accordion-content">
+                  <p>Ein Cookie ist eine Textinformation, die im Browser auf dem Computer des Betrachters jeweils zu einer besuchten Website gespeichert werden kann.
+                    Der Webserver kann bei späteren, erneuten Besuchen dieser Seite diese Cookie-Information direkt vom Server aus auslesen.
+                    Aufgabe dieser Cookies ist beispielsweise die Identifizierung des Surfers (Session ID), das Abspeichern eines Logins bei einer Internetanwendung wie Wikipedia, Facebook usw. oder das Abspeichern eines Warenkorbs bei einem Online-Händler.</p>
+              </div>
+          </li>
+          <li id="third_party_request_explanation" class="hidden">
+              <a class="uk-accordion-title" href="#">Was sind Anfragen an Drittanbieter?</a>
+              <div class="uk-accordion-content">
+                  <p>Kommunikation im Internet zwischen einem Rechner eines Nutzers und einem Server, läuft über Anfragen (Engl. requests) und Antworten (engl. Responses).
+                    Wenn zum Laden einer Webseite nicht nur Anfragen an der Server gehen, auf dem diese Webseite veröffentlicht ist, sondern zusätzlich auch noch an Drittanbieter oder Drittparteien (Engl. Third Parties), dann sind das Anfragen an Drittanbieter.
+                  Diese Drittanbieter können damit ebenfalls die Information erhalten, dass der aktuelle Nutzer diese Webseite besucht.</p>
+              </div>
+          </li>
+          <li id="privacy_points_explanation" class="hidden">
+              <a class="uk-accordion-title" href="#">Was sind Privatsphäre-Punkte?</a>
+              <div class="uk-accordion-content">
+                  <p>Von dieser Erweiterung werden für, der Privatsphäre zuträgliches Verhalten, Privatsphäre-Punkte vergeben. Dies kann beispielsweise das Setzen einer Browsereinstellung sein.
+                    Bei Verhalten, das schlecht für die Privatsphäre ist, z.B. dem Besuch von Seiten mit vielen Cookies und Anfragen an Drittanbieter, werden Privatsphäre-Punkte abgezogen.
+                  </p>
+              </div>
+          </li>
+        </ul>
+      </div>
+      <div id="end_of_study_info" class="hidden">
+        <p>Unten sehen Sie nun zusätzliche Informationen zu Privatsphäre bzw. Ihrem Browsing-Verhalten. Eventuell kommen Ihnen einige der Informationen bereits bekannt vor. Scrollen Sie aber bis ganz nach unten, um auch neue Informationen zu erhalten.</p>
+      </div>
+        <div id="shown_with_updates" class="subheading hidden">
+          <h6>Privatsphäre Update</h6>
+        </div>
+        <div id="updates_go_here">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div>
+  <script src="info_pane.js"></script>
+  <script src="../libraries/uikit.min.js"></script>
+</body>
+
+</html>
